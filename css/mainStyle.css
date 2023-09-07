@@ -1,23 +1,19 @@
 
-
-
-
-
-
-
-
-
-
-
+/* #section_one,*/ #section_two, #section_three, #section_four, #bonus { 
+  display: none;
+}
 pre code{
-  width: 25%;
   color: black;
   background-color: white;
   border: 1px solid black;
   display: block;
   font-size: 30px;
-
 }
+
+nav, #subNav {
+  margin: 50px 0px;
+}
+
 
 
 

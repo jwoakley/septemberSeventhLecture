@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>September Seventh Lecture</title>
-    <link rel="stylesheet" href="css/mainStyle.css">
+  
     <!-- add a link to stylesheet here -->
   </head>
     <body>
@@ -15,14 +15,23 @@
           <a href="#">section_two</a>
           <a href="#">section_three</a>
           <a href="#">section_four</a>
+          <a href="#">bonus</a>
         </nav>
+    
         <h1> Thursday, September 7th</h1>
       </header>
-      
-      <a href="https://sfsu.edu/">sf state</a>
 
-      <section>
-        <!-- lets give each section its own id so we can style it later, we will call this "one" -->
+      <div id="subNav">
+      
+      <a href="https://sfsu.edu/">sub nav</a>
+      <a href="https://sfsu.edu/">sub nav</a>
+      <a href="https://sfsu.edu/">sub nav</a>
+      <a href="https://sfsu.edu/">sub nav</a>
+
+      </div>
+
+      <section id="section_one">
+        <!-- lets give each section its own id so we can style it later -->
         <h2>
           Inheritance
         </h2>
@@ -65,8 +74,6 @@
       </section>
 
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 <!-- this is how we comment out code, it is useful for adding notes and for parsing or debugging. We can also use it in our css to help organize -->
 
@@ -74,10 +81,11 @@
 
    <!-- lets give each section its own id so we can style it later, we will call this "two" -->
 
-      <section>
+      <section id="section_two">
         <h2>Nested Selectors</h2>
-        <img src="img/matryoshka.gif" alt="gif of nesting Matryoshka dolls">
         <h3>Remember how we talked about nesting? <br> And we compared code to the Russian Matryoshka dolls? <br>In this section, we will explore how this works.</h3>
+        <img src="img/matryoshka.gif" alt="gif of nesting Matryoshka dolls">
+     
         <p>here are the most common types of selectors:</p>
         <ol>
           <li><strong>universal:</strong> addresses every single element individually</li>
@@ -102,31 +110,30 @@
              ol li {} 
            </code>
           </pre>
-           <p>how do we change the li tags in the second list without changing the ones in the first list?</p>
+           <p>how do we change the <em>li</em> tags in the second list without changing the ones in the first list?</p>
            <!-- descendant selectors-->
 
-           <li><strong>multiple:</strong> addresses multiple elements, selectors sepererated by comma - for example, the code below addresses the h2 and the h3  tags
+           <li><strong>multiple:</strong> addresses multiple elements, selectors sepererated by comma - for example, the code below addresses the <em>h2</em> and the <em>h3</em> elements
            </li>
            <pre>
            <code>
               h2, h3 {} 
             </code>
           </pre>
-          <p>change the background color of the h2 and h3 elements</p>
+          <p>change the background color of the <em>h2</em> and the <em>h3</em> elements</p>
           <!-- descendant selectors-->
           
         </ol>
 
 
-        <p>the way we address elements depends on where they are located within that stack, and the selector we choose can have a big impact. what happens if we change the </p>
+        <p>the way we address elements depends on where they are located within that stack, and the selector we choose can have a big impact.</p>
       </section>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-      <section>
+      <section id="section_three">
         <h2>Specificity is the Name of the Game!</h2>
         <h3>The more specific rule will take precedence over the more general rule.</h3>
         <img src="img/specific.png" alt="order of specificity">
@@ -144,16 +151,16 @@
         </pre>
         <p>in order to change the &lt;a&gt; we have to get specific.</p>
         <!-- list out the heirarchy until we see change -->
-        <p>we could just select the anchor tag, right? yes but, what happens if we have anchor tags elsewhere that we dont want to change? scroll to the top and change the nav anchors but leave the sf state one alone</p>
+        <p>we could just select the anchor tag, right? yes but, what happens if we have anchor tags elsewhere that we dont want to change? scroll to the top and change the <em>nav</em> anchors but leave the <em>subNav</em>alone</p>
 
-        <h3>the most important rule: as you list styles the one on the bottom will always win!</h3>
+        <h3>the most important rule: as you list styles the one on the bottom will always win! Think about the term Cascading!</h3>
 
         <!-- change h3 -->
       </section>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-      <section>
+
+      <section id="section_four">
         <h2>
           Adding Custom Fonts
         </h2>
@@ -164,7 +171,9 @@
 
         <p> we are going to head over to google fonts now and choose a font for this document. Google fonts is a 100% free option</p>
 
-        <p> we will need to add code to both the head and to our css file in order to make this work.</p>
+        <p> we will need to add code to both the <em>head</em>head AND to our css file in order to make this work.</p>
+
+        <!-- search for Lato and add it to the head using the provided link tags. Also add it to the CSS file using the font-family property and font values to complete the declaration -->
 
         <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>
 
@@ -174,10 +183,10 @@
 
       </section>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-      <section>
+
+      <section id="bonus">
         <h3>jump links</h3>
         <a href="https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html">read me</a>
 
