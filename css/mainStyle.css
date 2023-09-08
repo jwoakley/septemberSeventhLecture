@@ -1,7 +1,57 @@
+/* universal style */
 
-/* #section_one,*/ #section_two, #section_three, #section_four, #bonus { 
-  display: none;
+* {
+  margin: 0;
 }
+
+/* body styling */
+
+body {
+  background-color: #cfffff;
+  color: #942eff;
+  font-family: 'Lato', sans-serif;
+  border: 2px solid black;
+}
+
+
+
+h2 {
+  color: green;
+  text-align: center;
+}
+
+li {
+  color: blue;
+  font-weight: bold;
+  list-style: none;
+  font-size: 24px;
+}
+
+ol li {
+  color: black;
+  font-size: 18px;
+}
+
+h2, h3 {
+  font-size: 24px;
+  color: #21a2ff;
+}
+
+.redEm {
+  color: red;
+}
+
+nav a {
+  color: green;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+
+
+/* #section_one, #section_two, #section_three,#section_four,  #bonus { 
+  display: none;
+}*/
 pre code{
   color: black;
   background-color: white;

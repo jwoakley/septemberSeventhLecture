@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>September Seventh Lecture</title>
+
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,300&family=Lato&display=swap" rel="stylesheet">
     <!-- add a link to stylesheet here -->
     <!-- add font link(s) here -->
   </head>
@@ -14,8 +19,8 @@
           <a href="#">section_one</a>
           <a href="#">section_two</a>
           <a href="#">section_three</a>
-          <a href="#">section_four</a>
-          <a href="#">bonus</a>
+          <a href="#section_four">section_four</a>
+          <a href="#bonus">bonus</a>
         </nav>
     
         <h1> Thursday, September 7th</h1>
@@ -38,16 +43,16 @@
          In css, just like with humans, inheritance is how certain properties are passed on from a parent element down to the child and grandchild elements.
         </h3>
         <p>
-          if you specify the <em>font-family</em> or <em>color </em>properties on the body tag, they will apply to the children as well
+          if you specify the <em class="redEm">font-family</em> or <em class="redEm">color </em>properties on the body tag, they will apply to the children as well
           <!-- add font family and color properties to body -->
         </p>
 
         <p>
-          now, not all properties are inherited - for example if the body had a <em>border</em>, the child elements would not inherit the border.
+          now, not all properties are inherited - for example if the body had a <em class="redEm">border</em>, the child elements would not inherit the border.
           <!-- add border to body  -->
         </p>
 
-        <p>the ones that are passed down are what we call <em>base styles</em>
+        <p>the ones that are passed down are what we call <em class="redEm">base styles</em>
         </p>
         <p>
           here is a list of inherited properties we will see in this class:
@@ -66,9 +71,9 @@
           <li>word-spacing</li>
         </ul>
 
-        <p>this stays true until you override the code. we can do that here by adding a <em>class</em> to change the emphasized text color. 
+        <p>this stays true until you override the code. we can do that here by adding a <em class="redEm">class</em> to change the emphasized text color. 
         <!-- create a class="redEm" and add it to all em tags using the search and replace feature in VSC change the color of the class-->
-        We can also target our <em>li</em>,<em>h2</em> and our <em>h3</em> elements by changing the color and size.</p>
+        We can also target our <em class="redEm">li</em>,<em class="redEm">h2</em> and our <em class="redEm">h3</em> elements by changing the color and size.</p>
         <!-- change color and size of the h2 and li tags and make the h3 tag center aligned -->
       </section>
 
@@ -109,17 +114,17 @@
              ol li {} 
            </code>
           </pre>
-           <p>how do we change the <em>li</em> tags in the second list without changing the ones in the first list?</p>
+           <p>how do we change the <em class="redEm">li</em> tags in the second list without changing the ones in the first list?</p>
            <!-- descendant selectors-->
 
-           <li><strong>multiple:</strong> addresses multiple elements, selectors sepererated by comma - for example, the code below addresses the <em>h2</em> and the <em>h3</em> elements
+           <li><strong>multiple:</strong> addresses multiple elements, selectors sepererated by comma - for example, the code below addresses the <em class="redEm">h2</em> and the <em class="redEm">h3</em> elements
            </li>
            <pre>
            <code>
               h2, h3 {} 
             </code>
           </pre>
-          <p>change the background color of the <em>h2</em> and the <em>h3</em> elements</p>
+          <p>change the background color of the <em class="redEm">h2</em> and the <em class="redEm">h3</em> elements</p>
           <!-- descendant selectors-->
           
         </ol>
@@ -150,7 +155,7 @@
         </pre>
         <p>in order to change the &lt;a&gt; we have to get specific.</p>
         <!-- list out the heirarchy until we see change -->
-        <p>we could just select the anchor tag, right? yes but, what happens if we have anchor tags elsewhere that we dont want to change? scroll to the top and change the <em>nav</em> anchors but leave the <em>subNav</em>alone</p>
+        <p>we could just select the anchor tag, right? yes but, what happens if we have anchor tags elsewhere that we dont want to change? scroll to the top and change the <em class="redEm">nav</em> anchors but leave the <em class="redEm">subNav</em>alone</p>
 
         <h3>the most important rule: as you list styles the one on the bottom will always win! Think about the term Cascading!</h3>
 
@@ -170,7 +175,7 @@
 
         <p> we are going to head over to google fonts now and choose a font for this document. Google fonts is a 100% free option</p>
 
-        <p> we will need to add code to both the <em>head</em>head AND to our css file in order to make this work.</p>
+        <p> we will need to add code to both the <em class="redEm">head</em>head AND to our css file in order to make this work.</p>
 
         <!-- search for Lato and add it to the head using the provided link tags. Also add it to the CSS file using the font-family property and font values to complete the declaration -->
 
